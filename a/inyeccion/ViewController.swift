@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     @IBAction func logOut(_ sender: Any)
      {
-        UserDefaults.standard.set(false, forKey: "logged")
+        UserDefaults.standard.set(false, forKey: "logged_")
         UserDefaults.standard.synchronize()
         self.performSegue(withIdentifier: "loginView", sender: self)
     }
